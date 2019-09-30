@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def indexpage(request):
-    return HttpResponse("Welcome to My Index Page")
+    return render(request,'index.html')
 def contactpage(request):
-    return HttpResponse("Contact Page")  
+    return render(request,'contact.html')  
 def homepage(request):
-    return HttpResponse("Welcome to My Home Page")      
+    return render(request,'home.html')      
 
